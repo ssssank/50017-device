@@ -8,7 +8,7 @@
 
     <!-- HEADER -->
     <header class="header-main">
-      <p class="logo-name">Device</p>
+      <a href="index.html" class="logo-name">Device</a>
       <div class="container">
         <nav class="main-nav">
           <div class="nav-tools">
@@ -25,7 +25,7 @@
           </div>
           <div class="site-nav">
             <div class="catalog-menu">
-              <a href="catalog.html">Каталог товаров</a>
+              <a>Каталог товаров</a>
             </div>
             <div class="services-nav">
               <a href="#">Доставка</a>
@@ -41,7 +41,111 @@
 
     <main class="container">
 
-    
+      <div class="brecrumps">
+        <h1>Моноподы для селфи</h1>
+        <ul class="breadcrumbs">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Каталог товаров</a></li>
+          <li><a href="#">Моноподы для селфи</a></li>
+        </ul>
+      </div>
+
+      <div class="content-wrapper">
+
+        <!-- TOP LINE WITH SORTING-->
+        <div class="sort">
+          <div class="left-side">
+            <p>Фильтр:</p>
+          </div>
+          <div class="right-side">
+            <p>Сортировка:</p>
+            <div class="sort-type">
+              <a href="#" class="active">По цене</a>
+              <a href="#">По типу</a>
+              <a href="#">По популярности</a>
+            </div>
+            <button class="sort-direction">Asc</button>
+            <button class="sort-direction active">Desc</button>
+          </div>
+        </div>
+
+        <!-- LEFT MENU WITH FILTERS-->
+        <form  action="#" method="get">
+          <div class="price-range-filter">
+            <div class="price-range-controls">
+              <h2>Стоимость</h2>
+              <div class="scale">
+                <div class="bar">
+                </div>
+              </div>
+              от
+              <div class="toggle min-toggle"> 0</div>
+              до
+              <div class="toggle max-toggle"> 5 000</div>
+            </div>
+          </div>
+
+          <div class="color">
+            <h2>Цвет</h2>
+            <input type="checkbox" id="color-black" checked>
+            <label for="color-black">Чёрный</label>
+            <input type="checkbox" id="color-white">
+            <label for="color-white">Белый</label>
+            <input type="checkbox" id="color-blue" checked>
+            <label for="color-blue">Синий</label>
+            <input type="checkbox" id="color-red" checked>
+            <label for="color-red">Красный</label>
+            <input type="checkbox" id="color-pink">
+            <label for="color-pink">Розовый</label>
+          </div>
+
+          <div class="bluetooth">
+            <h2>Bluetooth</h2>
+            <input type="radio" name="bluetooth" id="bt-1" value="bt-no">
+            <label for="bt-1">Есть</label>
+            <input type="radio" name="bluetooth" id="bt-2" value="bt-yes" checked>
+            <label for="bt-2">Нет</label>
+          </div>
+
+          <a href="#" class="btn">Показать</a>
+        </form>
+
+        <!-- MAIN CATALOG -->
+        <section class="catalog-items">
+          <div class="catalog-item">
+            <img src="http://placehold.it/300x300" width="300" height="300" alt="">
+            <p>Любительская селфи-палка</p>
+            <span>500 руб.</span>
+          </div>
+          <div class="catalog-item">
+            <img src="http://placehold.it/300x300" width="300" height="300" alt="">
+            <p>Профессиональная селфи-палка </p>
+            <span>1 500 руб.</span>
+          </div>
+          <div class="catalog-item">
+            <img src="http://placehold.it/300x300" width="300" height="300" alt="">
+            <p>Непотопляемая селфи-палка</p>
+            <span>300 руб.</span>
+          </div>
+          <div class="catalog-item new">
+            <img src="http://placehold.it/300x300" width="300" height="300" alt="">
+            <p>Селфи-палка «Следуй за мной»</p>
+            <span>4 900 руб.</span>
+          </div>
+        </section>
+
+        <!-- NUMBERS OF PAGES -->
+        <div class="pages-number">
+          <ul>
+            <li><a href="#" class="page-prev-btn">Назад</a></li>
+            <li><a href="#" class="currentpage-btn">1</a></li>
+            <li><a href="#" class="page-btn">2</a></li>
+            <li><a href="#" class="page-btn">3</a></li>
+            <li><a href="#" class="page-next-btn">Вперёд</a></li>
+          </ul>
+        </div>
+      </div>
+
     </main>
 
     <!-- FOOTER -->
