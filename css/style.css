@@ -113,3 +113,63 @@ h2 {
   float: right;
   width: 360px;
 }
+
+/*CATALOG PAGE*/
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.left-side {
+  float: left;
+  width: 280px;
+}
+
+.right-side {
+  float: right;
+  width: 780px;
+}
+
+.right-side div {
+  display: inline-block;
+}
+
+.main-filter {
+  float: left;
+  width: 280px;
+}
+
+.catalog-items {
+  float: right;
+  width: 780px;
+}
+
+.catalog-item:nth-child(odd) {
+  float: left;
+  width: 360px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(even) {
+  float: right;
+  width: 360px;
+}
+
+.pages-number ul{
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.pages-number li{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
