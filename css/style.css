@@ -15,3 +15,191 @@ h1 {
 h2 {
   font-size: 24px;
 }
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/*HEADER*/
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.catalog-submenu li,
+.services-nav li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.search-tools {
+  float: left;
+  width: 280px;
+}
+
+.user-tools {
+  float: right;
+  width: 300;
+}
+
+.user-login {
+  float: right;
+  width: 480;
+}
+
+.catalog-submenu {
+  display: none;
+}
+
+/*MAIN SLIDER*/
+.slide-image {
+  float: left;
+  width: 560px;
+}
+
+.slide-description {
+  float: right;
+  width: 560px;
+}
+
+.slide:nth-child(2),
+.slide:nth-child(3) {
+  display: none;
+}
+
+/*POPULAR*/
+.popular ul{
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: justify;
+}
+
+.popular ul:after {
+  display: inline-block;
+  content: "";
+  width: 100%;
+}
+
+.popular li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+/*SERVICES*/
+.service-buttons {
+  float: left;
+  width: 280px;
+}
+
+.service-buttons button {
+  display: block;
+}
+
+.services-description {
+  float: right;
+  width: 880px;
+}
+
+/*INFORMATION*/
+.about {
+  float: left;
+  width: 580px;
+}
+
+.contact {
+  float: right;
+  width: 580px;
+}
+
+/*FOOTER*/
+.footer-main {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  float: left;
+  width: 280px;
+}
+
+.footer-center {
+  float: left;
+  width: 440px;
+}
+
+.footer-right {
+  float: right;
+  width: 360px;
+}
+
+/*CATALOG PAGE*/
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.left-side {
+  float: left;
+  width: 280px;
+}
+
+.right-side {
+  float: right;
+  width: 780px;
+}
+
+.right-side div {
+  display: inline-block;
+}
+
+.main-filter {
+  float: left;
+  width: 280px;
+}
+
+.catalog-items {
+  float: right;
+  width: 780px;
+}
+
+.catalog-item:nth-child(odd) {
+  float: left;
+  width: 360px;
+  margin-right: 20px;
+}
+
+.catalog-item:nth-child(even) {
+  float: right;
+  width: 360px;
+}
+
+.pages-number ul{
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.pages-number li{
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
