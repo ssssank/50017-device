@@ -35,12 +35,30 @@ h2 {
   font-size: 0;
 }
 
-.nav-tools div,
 .catalog-submenu li,
 .services-nav li {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
+}
+
+.search-tools {
+  float: left;
+  width: 280px;
+}
+
+.user-tools {
+  float: right;
+  width: 300;
+}
+
+.user-login {
+  float: right;
+  width: 480;
+}
+
+.catalog-submenu {
+  display: none;
 }
 
 /*MAIN SLIDER*/
@@ -54,11 +72,23 @@ h2 {
   width: 560px;
 }
 
+.slide:nth-child(2),
+.slide:nth-child(3) {
+  display: none;
+}
+
 /*POPULAR*/
 .popular ul{
   margin: 0;
   padding: 0;
   font-size: 0;
+  text-align: justify;
+}
+
+.popular ul:after {
+  display: inline-block;
+  content: "";
+  width: 100%;
 }
 
 .popular li {
