@@ -3,39 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <!-- HEADER -->
     <header class="header-main">
-
       <div class="container">
-        <p class="logo-name">Device</p>
+        <a class="logo-name">Device</a>
         <nav class="main-nav">
           <div class="nav-tools clearfix">
             <div class="search-tools">
               <form action="#" method="get">
-                <input type="search" name="search" placeholder="Поиск по сайту">
-                <input type="submit" value="Найти">
+                <input type="search" class="search-field" name="search" placeholder="Поиск по сайту">
+                <input type="submit" class="search-button" value="Найти">
               </form>
             </div>
             <div class="user-login">
-              <a href="#">Войти</a>
+              <a href="#" class="login-ico">Войти</a>
             </div>
             <div class="user-tools">
-              <a href="#">Сравнить</a>
-              <a href="#">Корзина</a>
+              <a href="#" class="compare-ico">Сравнить</a>
+              <a href="#" class="basket-ico">Корзина</a>
             </div>
           </div>
           <div class="site-nav">
             <div class="catalog-menu">
-              <a href="catalog.html">Каталог товаров</a>
+              <a href="catalog.html" class="catalog-ico">Каталог товаров</a>
               <ul class="catalog-submenu">
                 <li><a href="#">Виртуальная реальность</a></li>
                 <li><a href="#">Моноподы для селфи</a></li>
                 <li><a href="#">Экшн-камеры</a></li>
-                <li><a href="#">Фитнесс-браслеты</a></li>
+                <li><a href="#">Фитнес-браслеты</a></li>
                 <li><a href="#">Умные часы</a></li>
                 <li><a href="#">Квадрокоптеры</a></li>
               </ul>
@@ -204,6 +205,8 @@
       <div class="footer-right">
         <div class="user-login">
           <a href="#">Войти</a>
+        </div>
+        <div class="user-tools">
           <a href="#">Сравнить</a>
           <a href="#">Корзина</a>
         </div>

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -12,11 +14,11 @@
       <div class="container">
         <a href="index.html" class="logo-name">Device</a>
         <nav class="main-nav">
-          <div class="nav-tools">
-            <div class="serch-tools">
+          <div class="nav-tools clearfix">
+            <div class="search-tools">
               <form action="#" method="get">
-                <input type="search" name="search" placeholder="Поиск по сайту">
-                <input type="submit" value="Найти">
+                <input type="search" class="search-field" name="search" placeholder="Поиск по сайту">
+                <input type="submit" class="search-button" value="Найти">
               </form>
             </div>
             <div class="user-login">
@@ -38,13 +40,13 @@
                 <li><a href="#">Фитнесс-браслеты</a></li>
                 <li><a href="#">Умные часы</a></li>
                 <li><a href="#">Квадрокоптеры</a></li>
+              </ul>  
+              <ul class="services-nav">
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Контакты</a></li>
               </ul>
             </div>
-            <ul class="services-nav">
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
           </div>
         </nav>
       </div>
