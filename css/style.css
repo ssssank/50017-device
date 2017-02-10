@@ -476,7 +476,6 @@ h2 {
   margin: 0;
   padding: 0;
   font-size: 0;
-  text-align: justify;
 }
 
 .popular ul::after {
@@ -486,9 +485,119 @@ h2 {
 }
 
 .popular li {
+  position: relative;
   display: inline-block;
+  width: 160px;
+  margin-right: 40px;
+  padding-top: 200px;
   vertical-align: top;
   font-size: 14px;
+  cursor: pointer;
+}
+
+.popular li:last-child {
+  margin-right: 0;
+}
+
+.popular li:hover::before {
+  background-color: #ffc600;
+}
+
+.popular li:active a::before,
+.popular li:active a {
+  opacity: 0.3;
+}
+
+.popular li::before {
+  content: "";
+  position: absolute;
+  display: block;
+
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  background-color: #ffe27f;
+}
+
+.popular a {
+  font-size: 18px;
+  line-height: 18px;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.vr a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50px;
+  left: 0;
+  width: 150px;
+  height: 65px;
+  background-image: url(../img/sprite.png);
+  background-position: 30px -120px;
+}
+
+.monopod a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 37px;
+  left: 0;
+  width: 150px;
+  height: 130px;
+  background-image: url(../img/sprite.png);
+  background-position: 30px -180px;
+}
+
+.camera a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 30px;
+  left: 0;
+  width: 150px;
+  height: 100px;
+  background-image: url(../img/sprite.png);
+  background-position: 45px -305px;
+}
+
+.bracelet a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 40px;
+  left: 0;
+  width: 150px;
+  height: 80px;
+  background-image: url(../img/sprite.png);
+  background-position: 20px -400px;
+}
+
+.watch a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 30px;
+  left: 0;
+  width: 150px;
+  height: 110px;
+  background-image: url(../img/sprite.png);
+  background-position: 45px -480px;
+}
+
+.quadcopters a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 45px;
+  left: 0;
+  width: 150px;
+  height: 80px;
+  background-image: url(../img/sprite.png);
+  background-position: 10px -590px;
 }
 
 /*SERVICES*/
