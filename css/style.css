@@ -312,14 +312,14 @@ h2 {
 
 }
 
-.slider {
+.slider-wrapper {
   position: relative;
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 160px;
 }
 
-.slider::before {
+.slider-wrapper::before {
   content: "";
   position: absolute;
   top: 0;
@@ -349,7 +349,8 @@ h2 {
 }
 
 .slide:nth-child(1),
-.slide:nth-child(2) {
+.slide:nth-child(2),
+.slide:nth-child(3) {
   display: none;
 }
 
@@ -407,8 +408,8 @@ h2 {
   margin-bottom: 73px;
 }
 
-.slider-spec table {
-
+.slider-spec {
+  padding-bottom: 116px;
 }
 
 .slider-spec th,
@@ -433,6 +434,41 @@ h2 {
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 350px;
+  left: 950px;
+}
+
+.slider-wrapper input[type="radio"] {
+  display: none;
+}
+
+.slider-controls label{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    margin-left: 23px;
+    background: white;
+    border: 3px solid #c1c1c1;
+    vertical-align: middle;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#btn-1:checked ~ .slider > .slide:nth-child(1),
+#btn-2:checked ~ .slider > .slide:nth-child(2),
+#btn-3:checked ~ .slider > .slide:nth-child(3) {
+  display: block;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  border-color: black;
 }
 
 /*POPULAR*/

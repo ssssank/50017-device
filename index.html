@@ -54,52 +54,59 @@
     <main class="container">
 
       <!-- SLIDER WITH MAIN PRODUCT -->
-      <div class="slider">
-        <div class="slide clearfix">
-          <div class="slide-image">
-            <img src="img/slider-1.png" width="384" height="486" alt="">
-          </div>
-          <div class="slide-description">
-            <p class="slider-number">01</p>
-            <span class="slider-title">Делай селфи,<br> как Бен Стиллер!</span>
-            <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a href="#" class="btn">Подробнее</a>
-            <table class="slider-spec">
-              <tr>
-                <th>8,5 м</th>
-                <th>5 кг</th>
-                <th>Карбон</th>
-              </tr>
-              <tr>
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
-              </tr>
-            </table>
-          </div>
-        </div>
+      <div class="slider-wrapper">
 
-        <div class="slide clearfix">
-          <div class="slide-image">
-            <img src="img/slider-2.png" width="345" height="485" alt="">
-          </div>
-          <div class="slide-description">
-            <p class="slider-number">02</p>
-            <span class="slider-title">Худеем<br>правильно!</span>
-            <p class="slider-text">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a href="#" class="btn">Подробнее</a>
-            <table class="slider-spec">
-              <tr>
-                <th>48 часов</th>
-              </tr>
-              <tr>
-                <td>Без подзарядки</td>
-              </tr>
-            </table>
-          </div>
-        </div>
+        <input class="slider-btn" type="radio" id="btn-1" name="toggle" checked>
+        <input class="slider-btn" type="radio" id="btn-2" name="toggle">
+        <input class="slider-btn" type="radio" id="btn-3" name="toggle">
 
-        <div class="slide clearfix">
+        <div class="slider">
+
+          <div class="slide clearfix">
+            <div class="slide-image">
+              <img src="img/slider-1.png" width="384" height="486" alt="">
+            </div>
+            <div class="slide-description">
+              <p class="slider-number">01</p>
+              <span class="slider-title">Делай селфи,<br> как Бен Стиллер!</span>
+              <p class="slider-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <a href="#" class="btn">Подробнее</a>
+              <table class="slider-spec">
+                <tr>
+                  <th>8,5 м</th>
+                  <th>5 кг</th>
+                  <th>Карбон</th>
+                </tr>
+                <tr>
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="slide clearfix">
+            <div class="slide-image">
+              <img src="img/slider-2.png" width="345" height="485" alt="">
+            </div>
+            <div class="slide-description">
+              <p class="slider-number">02</p>
+              <span class="slider-title">Худеем<br>правильно!</span>
+              <p class="slider-text">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+              <a href="#" class="btn">Подробнее</a>
+              <table class="slider-spec">
+                <tr>
+                  <th>48 часов</th>
+                </tr>
+                <tr>
+                  <td>Без подзарядки</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="slide clearfix">
           <div class="slide-image">
             <img src="img/slider-3.png" width="526" height="334" alt="">
           </div>
@@ -121,10 +128,9 @@
           </div>
         </div>
 
+        </div>
+
         <div class="slider-controls">
-          <input class="slider-btn" type="radio" id="btn-1" name="toggle">
-          <input class="slider-btn" type="radio" id="btn-2" name="toggle">
-          <input class="slider-btn" type="radio" id="btn-3" name="toggle">
           <label for="btn-1"></label>
           <label for="btn-2"></label>
           <label for="btn-3"></label>
@@ -135,12 +141,12 @@
       <!-- POPULAR PRODUCTS -->
       <section class="popular">
         <ul>
-          <li><a href="#">Виртуальная реальность</a></li>
-          <li><a href="#">Моноподы для селфи</a></li>
-          <li><a href="#">Экшн-камеры</a></li>
-          <li><a href="#">Фитнесс браслеты</a></li>
-          <li><a href="#">Умные часы</a></li>
-          <li><a href="#">Квадрокоптеры</a></li>
+          <li class="vr"><a href="#">Виртуальная реальность</a></li>
+          <li class="monopod"><a href="#">Моноподы для&nbsp;селфи</a></li>
+          <li class="camera"><a href="#">Экшн-камеры</a></li>
+          <li class="bracelet"><a href="#">Фитнесс браслеты</a></li>
+          <li class="watch"><a href="#">Умные часы</a></li>
+          <li class="quadcopters"><a href="#">Квадрокоптеры</a></li>
         </ul>
       </section>
 
