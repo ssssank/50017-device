@@ -682,6 +682,7 @@ h2 {
 .logos {
   margin-top: 94px;
   margin-bottom: 93px;
+  font-size: 0;
 }
 
 .logos a {
@@ -694,7 +695,6 @@ h2 {
   padding-left: 0;
 }
 
-.logos a:nth-of-type(3),
 .logos a:nth-of-type(4) {
   padding-right: 0;
 }
@@ -718,12 +718,93 @@ h2 {
 /*INFORMATION*/
 .about {
   float: left;
+  margin-bottom: 83px;
   width: 580px;
 }
 
 .contact {
   float: right;
   width: 580px;
+}
+
+.about-title,
+.contact-title {
+  position: relative;
+  padding-top: 58px;
+  padding-bottom: 38px;
+  margin: 0;
+  font-size: 47px;
+  line-height: 47px;
+  letter-spacing: 2px;
+}
+
+.about-title::before,
+.contact-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 80px;
+  height: 7px;
+  background-color: black;
+}
+
+.about-text,
+.contact-text {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.about-text {
+  width: 475px;
+}
+.contact-text {
+  width: 520px;
+}
+
+.delivery-companies {
+  margin-top: 33px;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.delivery-companies li {
+  position: relative;
+  margin-top: 26px;
+  padding-left: 15px;
+  list-style: none;
+}
+
+.delivery-companies li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: -20px;
+  box-sizing: border-box;
+  background: white;
+  border: 3px solid #b2b2b2;
+
+  border-radius: 50%;
+}
+
+.contact img {
+  margin-top: 25px;
+  margin-bottom: -8px;
+  height: 222px;
+  width: 560px;
+}
+
+.about .btn,
+.contact .btn {
+  margin-top: 70px;
 }
 
 /*FOOTER*/
