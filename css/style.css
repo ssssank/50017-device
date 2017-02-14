@@ -42,7 +42,7 @@ h2 {
 }
 
 /*HEADER*/
-.header-main .container {
+.header-main {
   position: relative;
   width: 1040px;
   margin-top: 40px;
@@ -55,7 +55,7 @@ h2 {
   background-color: #ffe27f;
 }
 
-.header-main .container::after {
+.header-main::after {
   content: "";
   position: absolute;
   top: 225px;
@@ -67,7 +67,7 @@ h2 {
 }
 
 
-.logo-name {
+.header-main .logo-name-header {
   display: block;
   position: relative;
   margin-top: -42px;
@@ -80,11 +80,11 @@ h2 {
   color: black;
 }
 
-.inner .logo-name:hover {
+.inner .logo-name-header:hover {
   color: #444444;
 }
 
-.inner .logo-name:active {
+.inner .logo-name-header:active {
   color: #666666;
 }
 
@@ -103,6 +103,11 @@ h2 {
   padding-top: 4px;
   max-width: 280px;
   text-align: left;
+}
+
+.user-log-off {
+  margin-left: 15px;
+  opacity: 0.3;
 }
 
 .login-ico {
@@ -252,6 +257,10 @@ h2 {
   opacity: 0.3;
 }
 
+.site-nav {
+  padding-bottom: 50px;
+}
+
 .site-nav a {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -329,7 +338,7 @@ h2 {
   position: relative;
   padding-left: 60px;
   padding-right: 60px;
-  padding-top: 160px;
+  padding-top: 110px;
 }
 
 .slider-wrapper::before {
@@ -338,7 +347,7 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
-  height: 160px;
+  height: 110px;
   z-index: -1;
 
   background-color: #ffe27f;
@@ -855,6 +864,7 @@ h2 {
 
 /*FOOTER*/
 .footer-main {
+  min-width: 1200px;
   background-color: #444444;
   color: white;
 }
@@ -872,20 +882,26 @@ h2 {
   opacity: 0.3;
 }
 
-.footer-main .logo-name {
+.footer-main .logo-name-footer {
   display: block;
   margin: 0;
   margin-bottom: 22px;
   padding: 0;
   padding-top: 60px;
   color: #ffe27f;
+
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
-.footer-main-inner .logo-name:hover {
+.inner .logo-name-footer:hover {
   color: #ffc600;
 }
 
-.footer-main-inner .logo-name:active {
+.inner .logo-name-footer:active {
   opacity: 0.3;
 }
 
@@ -1049,6 +1065,24 @@ a.htmlacademy-ico {
 }
 
 /*CATALOG PAGE*/
+.inner main {
+  width: 1160px;
+}
+
+.breadcrumbs {
+  margin-bottom: 50px;
+  padding-left: 60px;
+}
+
+.breadcrumbs h1 {
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  font-size: 47px;
+  line-height: 47px;
+}
+
 .breadcrumbs ul {
   margin: 0;
   padding: 0;
@@ -1056,19 +1090,51 @@ a.htmlacademy-ico {
 }
 
 .breadcrumbs li {
+  position: relative;
+  margin-right: 38px;
   display: inline-block;
   vertical-align: top;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: -20px;
+  width: 4px;
+  height: 7px;
+  background-image: url(../img/nav-arrow.svg);
+}
+
+.breadcrumbs li:last-child::after {
+  background: none;
+}
+
+.breadcrumbs a {
+  color: black;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.breadcrumbs a[href]:hover {
+  opacity: 1;
 }
 
 .left-side {
   float: left;
   width: 280px;
+  background-color: #dddddd;
 }
 
 .right-side {
   float: right;
   width: 780px;
+  background-color: #ebebeb;
 }
 
 .right-side div {

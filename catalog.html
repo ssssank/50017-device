@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner">
 
     <!-- HEADER -->
-    <header class="header-main">
-      <div class="container">
-        <a href="index.html" class="logo-name">Device</a>
+    <div class="container">
+      <header class="header-main">
+        <a href="index.html" class="logo-name-header">Device</a>
         <nav class="main-nav">
           <div class="nav-tools clearfix">
             <div class="search-tools">
@@ -22,17 +23,17 @@
               </form>
             </div>
             <div class="user-login">
-              <a href="#">Валентин Петухов</a>
-              <a href="#">Выйти</a>
+              <a href="#" class="login-ico">Валентин Петухов</a>
+              <a href="#" class="user-log-off">Выйти</a>
             </div>
             <div class="user-tools">
-              <a href="#">Сравнить</a>
-              <a href="#">Корзина</a>
+              <a href="#" class="compare-ico">Сравнить</a>
+              <a href="#" class="basket-ico">Корзина</a>
             </div>
           </div>
           <div class="site-nav">
             <div class="catalog-menu">
-              <a href="catalog.html">Каталог товаров</a>
+              <a href="catalog.html" class="catalog-ico">Каталог товаров</a>
               <ul class="catalog-submenu">
                 <li><a href="#">Виртуальная реальность</a></li>
                 <li><a href="#">Моноподы для селфи</a></li>
@@ -40,7 +41,7 @@
                 <li><a href="#">Фитнесс-браслеты</a></li>
                 <li><a href="#">Умные часы</a></li>
                 <li><a href="#">Квадрокоптеры</a></li>
-              </ul>  
+              </ul>
               <ul class="services-nav">
                 <li><a href="#">Доставка</a></li>
                 <li><a href="#">Гарантия</a></li>
@@ -49,8 +50,8 @@
             </div>
           </div>
         </nav>
-      </div>
-    </header>
+      </header>
+    </div>
 
     <main class="container">
 
@@ -165,29 +166,32 @@
 
     <!-- FOOTER -->
     <footer class="footer-main">
-      <div class="footer-left">
-        <span class="logo-name">Device</span>
-        <p>г. Москва, ул. Строителей, 15</p>
-      </div>
-      <div class="footer-center">
-        <div class="site-nav">
-          <a href="#">Доставка</a>
-          <a href="#">Гарантия</a>
-          <a href="#">Контакты</a>
+      <div class="container clearfix">
+        <div class="footer-left">
+          <a href="#" class="logo-name-footer">Device</a>
+          <p>г. Москва, ул. Строителей, 15</p>
         </div>
-        <div class="social">
-          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
-          <a href="#" class="social-btn social-btn-tw">Твитер</a>
+        <div class="footer-center">
+          <div class="footer-site-nav">
+            <a href="#">Доставка</a>
+            <a href="#">Гарантия</a>
+            <a href="#">Контакты</a>
+          </div>
+          <div class="social">
+            <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+            <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+            <a href="#" class="social-btn social-btn-tw">Твитер</a>
+          </div>
         </div>
-      </div>
-      <div class="footer-left">
-        <div class="user-login">
-          <a href="#">Войти</a>
-          <a href="#">Сравнить</a>
-          <a href="#">Корзина</a>
+        <div class="footer-right">
+          <ul>
+            <li><a href="#" class="login-ico">Войти</a></li>
+            <li><a href="#" class="compare-ico">Сравнить</a></li>
+            <li><a href="#" class="basket-ico">Корзина</a></li>
+          </ul>
+          <p>Тел.: +7 (495) 495-95-95</p>
+          <a href="http://htmlacademy.ru" target="_blank" class="social-btn htmlacademy-ico">htmlacademy</a>
         </div>
-        <p>Тел.: +7 (495) 495-95-95</p>
       </div>
     </footer>
 
