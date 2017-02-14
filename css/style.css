@@ -1070,7 +1070,7 @@ a.htmlacademy-ico {
 }
 
 .breadcrumbs {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   padding-left: 60px;
 }
 
@@ -1081,6 +1081,7 @@ a.htmlacademy-ico {
   padding-bottom: 20px;
   font-size: 47px;
   line-height: 47px;
+  letter-spacing: 0.7px;
 }
 
 .breadcrumbs ul {
@@ -1125,20 +1126,111 @@ a.htmlacademy-ico {
   opacity: 1;
 }
 
+.sort {
+  margin-bottom: 70px;
+}
+
 .left-side {
   float: left;
-  width: 280px;
+  width: 268px;
+  padding-left: 60px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: black;
   background-color: #dddddd;
 }
 
 .right-side {
   float: right;
-  width: 780px;
+  width: 759px;
+  padding-left: 73px;
   background-color: #ebebeb;
 }
 
-.right-side div {
+.right-side p {
   display: inline-block;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-right: 25px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3.5px;
+  color: black;
+}
+
+.right-side a {
+  padding-left: 24px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+.right-side a:active {
+  opacity: 0.6;
+}
+
+.right-side .active,
+.right-side a:hover {
+  opacity: 1;
+}
+
+.right-side .sort-type {
+  display: inline-block;
+  vertical-align: baseline;
+  padding-right: 172px;
+}
+
+.sort-direction,
+.sort-direction li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sort-direction a{
+  font-size: 0;
+}
+
+.sort-direction-up,
+.sort-direction-down {
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.sort-direction-up {
+  background-position: left center;
+  background-image: url(../img/sort-up.svg);
+}
+
+.sort-direction-down {
+  padding-left: 8px;
+  background-position: right center;
+  background-image: url(../img/sort-down.svg);
+}
+
+.sort-direction-up:hover,
+.sort-direction-down:hover {
+  opacity: 0.6;
+}
+
+.sort-direction-up.active,
+.sort-direction-down.active,
+.sort-direction-up:active,
+.sort-direction-down:active {
+  opacity: 1;
 }
 
 .main-filter {
