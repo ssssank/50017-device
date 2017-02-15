@@ -1265,6 +1265,26 @@ a.htmlacademy-ico {
   margin-right: 0;
 }
 
+.catalog-items .new-item::after {
+  content: "New";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  padding-top: 22px;
+  top: 29px;
+  right: 29px;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 14px;
+  color: black;
+  text-transform: uppercase;
+  opacity: 0.2;
+  text-align: center;
+}
+
 .catalog-item p {
   display: inline-block;
   vertical-align: top;
@@ -1285,6 +1305,49 @@ a.htmlacademy-ico {
   line-height: 16px;
   font-weight: 300;
   float: right;
+}
+
+.hover-btn {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 360px;
+  height: 360px;
+  text-align: center;
+  z-index: 1;
+  background-color: rgba(239, 239, 239, 0.7);
+}
+
+.catalog-item-image:hover .hover-btn {
+  display: block;
+}
+
+.hover-btn a {
+  display: inline-block;
+}
+
+.hover-btn .btn {
+  margin-top: 169px;
+  margin-bottom: 7px;
+}
+
+.hover-btn .compare-add {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  font-weight: 300;
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+}
+
+.hover-btn .compare-add:hover {
+  opacity: 1;
+}
+
+.hover-btn .compare-add:active {
+  opacity: 0.2;
 }
 
 .pages-number ul{
