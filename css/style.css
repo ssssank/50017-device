@@ -1307,7 +1307,7 @@ a.htmlacademy-ico {
   float: right;
 }
 
-.hover-btn {
+.catalog-item-image .hover-btn {
   position: absolute;
   display: none;
   top: 0;
@@ -1350,6 +1350,12 @@ a.htmlacademy-ico {
   opacity: 0.2;
 }
 
+.pages-number {
+  margin-top: -7px;
+  margin-bottom: 74px;
+  background-color: #ebebeb;
+}
+
 .pages-number ul{
   margin: 0;
   padding: 0;
@@ -1360,4 +1366,51 @@ a.htmlacademy-ico {
   display: inline-block;
   vertical-align: top;
   font-size: 14px;
+}
+
+.pages-number a {
+  display: inline-block;
+  padding: 26px 12px;
+  font-size: 16px;
+  line-height: 16px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  opacity: 0.3;
+}
+
+.pages-number .page-prev-btn,
+.pages-number .page-next-btn {
+  padding: 26px 30px;
+  opacity: 1;
+}
+
+.pages-number .currentpage-btn,
+.pages-number a:active {
+  opacity: 1;
+}
+
+.pages-number a:hover {
+  opacity: 0.6;
+}
+
+.pages-number .page-prev-btn {
+  margin-right: 195px;
+}
+
+.pages-number .page-next-btn {
+  margin-left: 185px;
+  padding-left: 33px;
+  padding-right: 26px;
+}
+
+.pages-number .page-prev-btn:hover,
+.pages-number .page-next-btn:hover {
+  background-color: #d9d9d9;
+}
+
+.pages-number .page-prev-btn:active,
+.pages-number .page-next-btn:active {
+  color: rgba(0, 0, 0, 0.3);
 }
