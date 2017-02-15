@@ -1126,6 +1126,10 @@ a.htmlacademy-ico {
   opacity: 1;
 }
 
+.breadcrumbs a[href]:active {
+  opacity: 0.1;
+}
+
 .sort {
 
 }
