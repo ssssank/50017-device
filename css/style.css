@@ -168,17 +168,23 @@ h2 {
 
 .search-tools form {
   width: 440px;
+  font-size: 0;
+}
+
+.search-tools input {
+  font-size: 15px;
 }
 
 .search-tools .search-field {
   position: relative;
   width: 354px;
-  margin-right: -3px;
+
   padding: 12px 20px;
   padding-left: 40px;
   border: none;
-  border: 2px solid transparent;
-  background: #ffe27f url(../img/sprite.png) no-repeat 0px 50% ;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  background: #ffe27f url(../img/sprite.png) no-repeat;
   background-position: -50px -597px;
   color: black;
 }
@@ -361,6 +367,7 @@ h2 {
 }
 
 .slide-description {
+  position: relative;
   margin-top: -32px;
   float: right;
   width: 500px;
@@ -378,12 +385,13 @@ h2 {
 
 .slider-number {
   position: absolute;
-  top: -145px;
-  left: 931px;
+  top: -91px;
+  right: -11px;
+  margin: 0;
   font-size: 180px;
   line-height: 180px;
   color: white;
-  z-index: -1;
+  z-index: 1;
 }
 
 .slider-title {
@@ -462,8 +470,8 @@ h2 {
 
 .slider-controls {
   position: absolute;
-  top: 370px;
-  left: 982px;
+  bottom: 249px;
+  right: 85px;
 }
 
 .slider-wrapper input[type="radio"] {
@@ -656,6 +664,7 @@ h2 {
   margin-bottom: 25px;
   border: none;
   text-align: center;
+  cursor: pointer;
 }
 
 .service-btn:active {
