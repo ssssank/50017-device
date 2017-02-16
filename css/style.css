@@ -1566,3 +1566,78 @@ input[type="checkbox"] + label:active::before {
 .pages-number .page-next-btn:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+.price-range-controls{
+  position: relative;
+  padding-top: 7px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.price-range-controls .scale{
+  width: 200px;
+  height: 2px;
+  background: #dbdbdb;
+}
+
+.price-range-controls .bar{
+  width: 56%;
+  height: 2px;
+  background: #91c92f;
+}
+
+.price-range-controls .toggle{
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  width: 9px;
+  height: 10px;
+  cursor: pointer;
+  border: 2px solid #000;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.price-range-controls .toggle:active {
+  border: 2px solid #fff;
+  background: #7eae29;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.75);
+}
+
+.price-range-controls .min-toggle {
+  left: 0px;
+}
+.price-range-controls .max-toggle{
+  left: 112px;
+}
+
+.price-controls {
+  font-size: 0;
+  margin-bottom: 29px;
+}
+
+.price-controls input:focus {
+  color: #000;
+}
+
+.price-controls label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 32px;
+  color: #c6c6c6;
+  width: 50%;
+}
+
+.price-controls input{
+  display: inline-block;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 14px;
+  width: 60px;
+  padding: 2px 0;
+  text-align: left;
+  color: #c6c6c6;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
