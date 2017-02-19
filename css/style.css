@@ -1774,6 +1774,7 @@ input[type="checkbox"] + label:active::before {
 
 /* WRITE-US FORM */
 .write-us {
+  display: none;
   position: fixed;
   width: 960px;
   top: 50%;
@@ -1784,7 +1785,7 @@ input[type="checkbox"] + label:active::before {
   padding-bottom: 70px;
   padding-left: 100px;
   padding-right: 100px;
-  background-color: #fff;
+  background-color: white;
   box-shadow:
     0px 10px 20px 0px rgba(0, 0, 0, 0.2),
     0px 20px 40px 0px rgba(0, 0, 0, 0.75);
@@ -1924,4 +1925,56 @@ input[type="checkbox"] + label:active::before {
 /* BIG MAP */
 .big-map {
   display: none;
+  position: fixed;
+  width: 960px;
+  height: 559px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow:
+    0px 10px 20px 0px rgba(0, 0, 0, 0.2),
+    0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+  z-index: 2;
+}
+
+.close-big-map {
+  position: relative;
+  top: -545px;
+  right: -873px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffc600;
+  opacity: 0.5;
+}
+
+.close-big-map::before,
+.close-big-map::after {
+  position: absolute;
+  content: "";
+  top: 26px;
+  left: 13px;
+  width: 28px;
+  height: 2px;
+  background-color: white;
+  z-index: 2;
+}
+
+.close-big-map::after {
+  transform: rotate(45deg);
+}
+
+.close-big-map::before {
+  transform: rotate(-45deg);
+}
+
+.close-big-map:hover {
+  opacity: 1;
+}
+
+.close-big-map:active::before,
+.close-big-map:active::after {
+  opacity: 0.3;
 }
