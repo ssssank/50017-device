@@ -828,6 +828,7 @@ h2 {
   -ms-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
+  filter: gray;
   opacity: 0.2;
 }
 
