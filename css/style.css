@@ -1240,7 +1240,7 @@ a.htmlacademy-ico {
   background-color: #efefef;
 }
 
-.main-block .container-sortt {
+.main-block .container-sort {
   background-color: white;
 }
 
@@ -1346,6 +1346,19 @@ a.htmlacademy-ico {
 .sort-direction-up:active,
 .sort-direction-down:active {
   opacity: 1;
+}
+
+.main-block {
+  position: relative;
+  height: 100%;
+}
+
+.main-block .container-filtr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #efefef;
 }
 
 .main-filter {
