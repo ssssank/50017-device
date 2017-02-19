@@ -1774,7 +1774,84 @@ input[type="checkbox"] + label:active::before {
 
 /* WRITE-US FORM */
 .write-us {
-  display: none;
+  position: fixed;
+  width: 960px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #fff;
+  box-shadow:
+    0px 10px 20px 0px rgba(0, 0, 0, 0.2),
+    0px 20px 40px 0px rgba(0, 0, 0, 0.75);
+  z-index: 2;
+}
+
+.write-us-name {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 360px;
+}
+
+.write-us-name label {
+  display: block;
+  width: 100px;
+}
+
+.write-us-email {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 360px;
+  margin-left: 35px;
+}
+
+.write-us-email label {
+  display: block;
+  width: 110px;
+}
+
+.write-us textarea {
+  width: 760px;
+  margin-top: 10px;
+  padding: 15px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.write-us-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.write-us label {
+  margin-bottom: 10px;
+  font-family: "Gilroy", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 800;
+}
+
+.write-us input[type="text"],
+.write-us input[type="email"] {
+  width: 360px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.btn-form {
+  border: none;
 }
 
 /* BIG MAP */

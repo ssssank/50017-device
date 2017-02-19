@@ -253,17 +253,17 @@
       <form class="write-us-form" action="index.html" method="post">
         <div class="write-us-name">
           <label for="name">Ваше имя:</label>
-          <input type="text" class="invalid" name="Name" value="" id="name" placeholder="Представьтесь, пожалуйста" required>
+          <input type="text" name="name" value="" id="name" placeholder="Представьтесь, пожалуйста" required>
         </div>
         <div class="write-us-email">
           <label for="email">Ваш e-mail:</label>
-          <input type="email" class="invalid" name="email" value="" id="email" placeholder="Для отправки ответа" required>
+          <input type="email" name="email" value="" id="email" placeholder="Для отправки ответа" required>
         </div>
         <div class="write-us-text">
-          <span>Текст письма:</span>
-          <textarea placeholder="В свободной форме" rows="10"></textarea>
+          <label for="text">Текст письма:</label>
+          <textarea id="text" placeholder="В свободной форме" rows="10"></textarea>
         </div>
-        <button type="submit" name="button" class="button button-form">Отправить</button>
+        <button type="submit" name="button" class="btn btn-form">Отправить</button>
         <button type="button" name="button" class="close-form"></button>
       </form>
     </div>
