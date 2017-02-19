@@ -303,7 +303,7 @@ h2 {
   display: none;
   width: 600px;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 33px;
   padding-right: 500px;
   padding-left: 60px;
   left: 0;
@@ -480,10 +480,9 @@ h2 {
   font-weight: 800;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3.5px;
   color: black;
   background: transparent;
-  background: -moz-linear-gradient(top,  transparent 0px, transparent 16px, #ffc600 16px, #ffc600 24px, transparent 24px, transparent 40px);
   background: -webkit-linear-gradient(top,  transparent 0px,transparent 16px, #ffc600 16px,#ffc600 24px, transparent 24px, transparent 40px);
   background: linear-gradient(to bottom,  transparent 0px,transparent 16px, #ffc600 16px,#ffc600 24px, transparent 24px, transparent 40px);
 }
@@ -510,7 +509,9 @@ h2 {
   padding-right: 74px;
   text-align: left;
   vertical-align: baseline;
-  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none;
   white-space: nowrap;
 }
 
@@ -617,7 +618,7 @@ h2 {
   line-height: 18px;
   color: black;
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 
 .vr a::before {
@@ -695,6 +696,7 @@ h2 {
 /*SERVICES*/
 .services {
   min-height: 388px;
+  background: -webkit-linear-gradient(top,  #ffffff 0px,#ffffff 100px, #e6e6e6 100px,#e6e6e6 388px);
   background: linear-gradient(to bottom,  #ffffff 0px,#ffffff 100px, #e6e6e6 100px,#e6e6e6 388px);
 }
 
@@ -786,16 +788,17 @@ h2 {
 .services-description-title {
   font-size: 47px;
   line-height: 47px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .services-description-text {
   max-width: 440px;
-  margin-top: 35px;
+  margin-top: 30px;
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
+  letter-spacing: 0.3px;
 }
 
 /* LOGOS OF VENDORS */
@@ -855,11 +858,10 @@ h2 {
 .contact-title {
   position: relative;
   padding-top: 53px;
-  padding-bottom: 28px;
+  padding-bottom: 27px;
   margin: 0;
   font-size: 47px;
   line-height: 47px;
-  letter-spacing: 2px;
 }
 
 .about-title::before,
@@ -877,7 +879,7 @@ h2 {
 .about-text,
 .contact-text {
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   margin: 0;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -929,7 +931,13 @@ h2 {
 
 .about .btn,
 .contact .btn {
-  margin-top: 62px;
+  box-sizing: border-box;
+  width: 260px;
+  margin-top: 63px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  letter-spacing: 3.5px;
 }
 
 /*FOOTER*/
@@ -1135,19 +1143,19 @@ a.htmlacademy-ico {
 }
 
 /*CATALOG PAGE*/
-.inner main {
+.inner .container {
   width: 1160px;
 }
 
 .breadcrumbs {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   padding-left: 60px;
 }
 
 .breadcrumbs h1 {
   margin: 0;
   padding: 0;
-  padding-top: 35px;
+  padding-top: 38px;
   padding-bottom: 20px;
   font-size: 47px;
   line-height: 47px;
@@ -1200,13 +1208,46 @@ a.htmlacademy-ico {
   opacity: 0.1;
 }
 
-.sort {
+.container-filtr {
+  float: left;
+  width: 31.5%;
+}
+
+.container-sort {
+  float: right;
+  width: 68.5%;
+}
+
+.filtr {
+  float: right;
 
 }
 
-.left-side {
+.sort {
   float: left;
-  width: 268px;
+
+}
+
+.heading-filtr .container-filtr {
+  background-color: #dcdcdc;
+}
+
+.heading-filtr .container-sort {
+  background-color: #ebebeb;
+}
+
+.main-block .container-filtr {
+  background-color: #efefef;
+}
+
+.main-block .container-sortt {
+  background-color: white;
+}
+
+
+.filtr {
+  float: right;
+  width: 270px;
   padding-left: 60px;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -1220,14 +1261,14 @@ a.htmlacademy-ico {
   background-color: #dddddd;
 }
 
-.right-side {
-  float: right;
+.sort {
+  float: left;
   width: 759px;
   padding-left: 73px;
   background-color: #ebebeb;
 }
 
-.right-side p {
+.sort p {
   display: inline-block;
   margin: 0;
   padding-top: 27px;
@@ -1242,7 +1283,7 @@ a.htmlacademy-ico {
   color: black;
 }
 
-.right-side a {
+.sort a {
   padding-left: 24px;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
@@ -1253,16 +1294,16 @@ a.htmlacademy-ico {
   opacity: 0.3;
 }
 
-.right-side a:hover {
+.sort a:hover {
   opacity: 0.6;
 }
 
-.right-side a:active,
-.right-side .active {
+.sort a:active,
+.sort .active {
   opacity: 1;
 }
 
-.right-side .sort-type {
+.sort .sort-type {
   display: inline-block;
   vertical-align: baseline;
   padding-right: 172px;
@@ -1308,9 +1349,9 @@ a.htmlacademy-ico {
 }
 
 .main-filter {
-  float: left;
-  width: 268px;
-  padding-top: 70px;
+  float: right;
+  width: 270px;
+  padding-top: 69px;
   padding-left: 60px;
   background-color: #efefef;
 }
@@ -1423,7 +1464,6 @@ a.htmlacademy-ico {
   font-size: 14px;
   line-height: 40px;
   font-weight: 300;
-  color: black;
 }
 
 input[type="checkbox"] {
@@ -1538,9 +1578,9 @@ input[type="checkbox"] + label:active::before {
 }
 
 .catalog-items {
-  float: right;
+  float: left;
   width: 762px;
-  padding-top: 70px;
+  padding-top: 69px;
   padding-left: 70px;
 }
 
@@ -1609,6 +1649,7 @@ input[type="checkbox"] + label:active::before {
   text-align: center;
   z-index: 1;
   background-color: rgba(239, 239, 239, 0.7);
+  cursor: pointer;
 }
 
 .catalog-item-image:hover .hover-btn {
@@ -1616,12 +1657,16 @@ input[type="checkbox"] + label:active::before {
 }
 
 .hover-btn a {
-  display: inline-block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 200px;
+  display: block;
 }
 
 .hover-btn .btn {
   margin-top: 169px;
   margin-bottom: 7px;
+  letter-spacing: 2px;
 }
 
 .hover-btn .compare-add {
