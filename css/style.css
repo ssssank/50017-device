@@ -1791,6 +1791,10 @@ input[type="checkbox"] + label:active::before {
   z-index: 2;
 }
 
+.write-us-form {
+  position: relative;
+}
+
 .write-us-name {
   display: inline-block;
   vertical-align: baseline;
@@ -1815,7 +1819,8 @@ input[type="checkbox"] + label:active::before {
 }
 
 .write-us textarea {
-  width: 760px;
+  box-sizing: border-box;
+  width: 757px;
   margin-top: 10px;
   padding: 15px 20px;
   font-size: 14px;
@@ -1832,7 +1837,7 @@ input[type="checkbox"] + label:active::before {
 
 .write-us label {
   margin-bottom: 10px;
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   font-weight: 800;
@@ -1845,13 +1850,54 @@ input[type="checkbox"] + label:active::before {
   box-sizing: border-box;
   font-size: 14px;
   line-height: 22px;
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   background-color: #f2f2f2;
   border: none;
 }
 
 .btn-form {
   border: none;
+}
+
+.close-form {
+  position: absolute;
+  top: -40px;
+  right: -70px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffc600;
+  opacity: 0.5;
+}
+
+.close-form::before,
+.close-form::after {
+  position: absolute;
+  content: "";
+  top: 26px;
+  left: 13px;
+  width: 28px;
+  height: 2px;
+  background-color: white;
+  z-index: 2;
+}
+
+.close-form::after {
+  transform: rotate(45deg);
+}
+
+.close-form::before {
+  transform: rotate(-45deg);
+}
+
+.close-form:hover {
+  opacity: 1;
+}
+
+.close-form:active::before,
+.close-form:active::after {
+  opacity: 0.3;
 }
 
 /* BIG MAP */
