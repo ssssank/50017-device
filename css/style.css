@@ -1609,7 +1609,7 @@ input[type="checkbox"] + label:active:before {
   display: inline-block;
   vertical-align: top;
   margin: 0;
-
+  padding-top: 28px;
   width: 260px;
   font-size: 18px;
   line-height: 20px;
@@ -1744,7 +1744,7 @@ input[type="checkbox"] + label:active:before {
 }
 
 /* WRITE-US FORM */
-.write-us {
+main .write-us {
   display: none;
   position: fixed;
   width: 960px;
@@ -1761,6 +1761,18 @@ input[type="checkbox"] + label:active:before {
     0px 10px 20px 0px rgba(0, 0, 0, 0.2),
     0px 20px 40px 0px rgba(0, 0, 0, 0.75);
   z-index: 2;
+}
+
+.inner .write-us {
+  width: 960px;
+  margin: 0 auto;
+
+  box-sizing: border-box;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: white;
 }
 
 .write-us-form {
@@ -1894,7 +1906,7 @@ input[type="checkbox"] + label:active:before {
 }
 
 /* BIG MAP */
-.big-map {
+main .big-map {
   display: none;
   position: fixed;
   width: 960px;
@@ -1907,6 +1919,13 @@ input[type="checkbox"] + label:active:before {
     0px 10px 20px 0px rgba(0, 0, 0, 0.2),
     0px 20px 40px 0px rgba(0, 0, 0, 0.75);
   z-index: 2;
+}
+
+.inner .big-map {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .close-big-map {
