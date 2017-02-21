@@ -11,9 +11,7 @@
     font-style: normal;
 }
 
-body,
-h1,
-h2 {
+body {
   font-size: 14px;
   line-height: 24px;
   color: black;
@@ -21,13 +19,6 @@ h2 {
   font-family: "Gilroy", "Arial", sans-serif;
 }
 
-h1 {
-  font-size: 30px;
-}
-
-h2 {
-  font-size: 24px;
-}
 
 .clearfix:after {
   content: "";
@@ -47,10 +38,8 @@ h2 {
   width: 1040px;
   margin-top: 40px;
   padding-top: 20px;
-
   padding-left: 60px;
   padding-right: 60px;
-
   color: black;
   background-color: #ffe27f;
 }
@@ -62,7 +51,6 @@ h2 {
   left: 600px;
   width: 100px;
   height: 7px;
-
   background: white;
 }
 
@@ -117,7 +105,6 @@ h2 {
 .login-ico:after {
   content: "";
   position:absolute;
-
   width: 18px;
   height: 18px;
   top: 0px;
@@ -132,7 +119,6 @@ h2 {
 .compare-ico:after {
   content: "";
   position:absolute;
-
   width: 18px;
   height: 18px;
   top: 1px;
@@ -147,7 +133,6 @@ h2 {
 .basket-ico:after {
   content: "";
   position:absolute;
-
   width: 18px;
   height: 18px;
   top: 0px;
@@ -178,7 +163,6 @@ h2 {
 .search-tools .search-field {
   position: relative;
   width: 354px;
-
   padding: 12px 20px;
   padding-left: 40px;
   border: none;
@@ -389,7 +373,6 @@ h2 {
 .catalog-ico:after {
   content: "";
   position:absolute;
-
   width: 18px;
   height: 18px;
   top: 2px;
@@ -413,7 +396,6 @@ h2 {
   right: 0;
   height: 110px;
   z-index: -1;
-
   background-color: #ffe27f;
 }
 
@@ -604,7 +586,6 @@ h2 {
   content: "";
   position: absolute;
   display: block;
-
   top: 0;
   left: 0;
   width: 160px;
@@ -823,22 +804,30 @@ h2 {
 }
 
 .logos img {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(100%);
-  filter: gray;
   opacity: 0.2;
 }
 
 .logos img:hover {
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: grayscale(0%);
   opacity: 1;
+  height: 100px;
+  width: 0;
+  padding-left: 260px;
+}
+
+.dji img:hover {
+  background-image: url("../img/logo-1.jpg");
+}
+
+.sp-gadgets img:hover {
+  background-image: url("../img/logo-2.jpg");
+}
+
+.gopro img:hover {
+  background-image: url("../img/logo-3.jpg");
+}
+
+.vive img:hover {
+  background-image: url("../img/logo-4.jpg");
 }
 
 /*INFORMATION*/
@@ -918,7 +907,6 @@ h2 {
   box-sizing: border-box;
   background: white;
   border: 3px solid #b2b2b2;
-
   border-radius: 50%;
 }
 
@@ -967,7 +955,6 @@ h2 {
   padding: 0;
   padding-top: 60px;
   color: #ffe27f;
-
   font-size: 48px;
   line-height: 48px;
   font-weight: 800;
@@ -1004,7 +991,6 @@ h2 {
   left: 0;
   width: 80px;
   height: 7px;
-
   background: #ffe27f;
 }
 
@@ -1046,7 +1032,6 @@ h2 {
   display: block;
   width: 39px;
   height: 38px;
-
   color: #7c7c7c;
   background-color: transparent;
   border-radius: 50%
@@ -1102,6 +1087,7 @@ h2 {
   line-height: 36px;
   font-weight: 300;
   color: white;
+  text-decoration: none;
 }
 
 .footer-right a {
@@ -1190,9 +1176,10 @@ a.htmlacademy-ico {
   display: block;
   top: 15px;
   right: -20px;
-  width: 4px;
-  height: 7px;
+  width: 6px;
+  height: 10px;
   background-image: url("../img/nav-arrow.svg");
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs li:last-child:after {
@@ -1213,24 +1200,19 @@ a.htmlacademy-ico {
   opacity: 0.1;
 }
 
+.content-wrapper {
+  overflow: hidden;
+  widows: 100%;
+}
+
 .container-filtr {
   float: left;
-  width: 31.5%;
+  width: 32.5%;
 }
 
 .container-sort {
   float: right;
-  width: 68.5%;
-}
-
-.filtr {
-  float: right;
-
-}
-
-.sort {
-  float: left;
-
+  width: 67.5%;
 }
 
 .heading-filtr .container-filtr {
@@ -1248,7 +1230,6 @@ a.htmlacademy-ico {
 .main-block .container-sort {
   background-color: white;
 }
-
 
 .filtr {
   float: right;
@@ -1498,7 +1479,6 @@ input[type="checkbox"] + label {
 
 input[type="checkbox"] + label:before {
   content: "";
-
   position: absolute;
   top: 0;
   left: 0;
@@ -1513,11 +1493,9 @@ input[type="checkbox"]:checked + label::after {
   position: absolute;
   top: 8px;
   left: 6px;
-
   display: block;
   width: 12px;
   height: 7px;
-
   background-image: url("../img/tick.png");
   background-repeat: no-repeat;
 }
@@ -1528,11 +1506,9 @@ input[type="radio"] {
 
 input[type="radio"] + label {
   position: relative;
-
   display: block;
   margin-bottom: 20px;
   padding-left: 40px;
-
   line-height: 20px;
   cursor: pointer;
 }
@@ -1540,7 +1516,6 @@ input[type="radio"] + label {
 input[type="radio"] + label:before {
   content: "";
   box-sizing: border-box;
-
   position: absolute;
   top: 0;
   left: 0;
@@ -1558,11 +1533,9 @@ input[type="radio"]:checked + label:after {
   position: absolute;
   top: 7px;
   left: 7px;
-
   display: block;
   width: 9px;
   height: 9px;
-
   border: 2px solid black;
   border-radius: 50%;
 }
@@ -1580,7 +1553,6 @@ input[type="checkbox"] + label:hover:before {
 }
 
 input[type="checkbox"] + label:active:before {
-
   background-color: #bdbdbd;
 }
 
@@ -1637,7 +1609,7 @@ input[type="checkbox"] + label:active:before {
   display: inline-block;
   vertical-align: top;
   margin: 0;
-  padding-top: 26px;
+
   width: 260px;
   font-size: 18px;
   line-height: 20px;
@@ -1684,7 +1656,7 @@ input[type="checkbox"] + label:active:before {
 .hover-btn .btn {
   margin-top: 169px;
   margin-bottom: 7px;
-  letter-spacing: 2px;
+  letter-spacing: 1.95px;
 }
 
 .hover-btn .compare-add {
