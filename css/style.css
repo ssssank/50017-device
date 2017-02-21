@@ -1161,7 +1161,7 @@ a.htmlacademy-ico {
 
 .breadcrumbs li {
   position: relative;
-  margin-right: 38px;
+  margin-right: 42px;
   display: inline-block;
   vertical-align: top;
   font-family: "Open Sans", "Arial", sans-serif;
@@ -1170,26 +1170,38 @@ a.htmlacademy-ico {
   font-weight: 300;
 }
 
-.breadcrumbs li:after {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 15px;
-  right: -20px;
-  width: 6px;
-  height: 10px;
-  background-image: url("../img/nav-arrow.svg");
-  background-repeat: no-repeat;
-}
-
-.breadcrumbs li:last-child:after {
-  background: none;
-}
-
 .breadcrumbs a {
+
   color: black;
   text-decoration: none;
   opacity: 0.3;
+}
+
+.breadcrumbs li:before,
+.breadcrumbs li:after {
+  content:'';
+  display: block;
+  width: 5px;
+  height: 1px;
+  position: absolute;
+  background-color: black;
+  right: -20px;
+  opacity: 1;
+}
+
+.breadcrumbs li:before {
+  transform: rotate(225deg);
+  top: 14px;
+}
+
+.breadcrumbs li:after {
+  transform: rotate(-45deg);
+  top: 17px;
+}
+
+.breadcrumbs li:last-of-type:before,
+.breadcrumbs li:last-of-type:after {
+  background: none;
 }
 
 .breadcrumbs a[href]:hover {
@@ -1605,7 +1617,7 @@ input[type="checkbox"] + label:active:before {
   text-align: center;
 }
 
-.catalog-item a {
+.catalog-item > a {
   display: inline-block;
   vertical-align: top;
   margin: 0;
@@ -1744,7 +1756,7 @@ input[type="checkbox"] + label:active:before {
 }
 
 /* WRITE-US FORM */
-main .write-us {
+.main-write-us {
   display: none;
   position: fixed;
   width: 960px;
@@ -1906,7 +1918,7 @@ main .write-us {
 }
 
 /* BIG MAP */
-main .big-map {
+.main-big-map {
   display: none;
   position: fixed;
   width: 960px;
