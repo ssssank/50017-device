@@ -1218,19 +1218,74 @@ a.htmlacademy-ico {
 
 .container-filtr {
   float: left;
-  width: 32.5%;
+  width: 328px;
+  padding-left: 60px;
+  padding-right: 68px;
+  box-sizing: border-box;
 }
 
 .container-sort {
-  float: right;
-  width: 67.5%;
+  float: left;
+  width: 832px;
+  padding-left: 72px;
+  box-sizing: border-box;
 }
 
-.heading-filtr .container-filtr {
+.catalog-header,
+.catalog-header-center,
+.catalog-header-left,
+.catalog-header-right,
+.sort {
+  min-height: 70px;
+}
+
+.main-block,
+.catalog-body-center,
+.catalog-body-left,
+.catalog-body-right,
+.catalog-body-center .container-filtr {
+  min-height: 1213px;
+}
+
+.catalog-header-center,
+.catalog-body-center {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.catalog-header-left,
+.catalog-header-right,
+.catalog-body-left,
+.catalog-body-right {
+  width: calc(50% - 580px);
+}
+
+.catalog-header-left {
+  float: left;
+  background-color: #dddddd;
+}
+
+.catalog-header-right {
+  float: right;
+  background-color: #ebebeb;
+}
+
+.catalog-body-left {
+  float: left;
+  background-color: #f0f0f0;
+}
+
+.catalog-body-right {
+  float: right;
+  background-color: transparent;
+}
+
+.catalog-header-center .container-filtr {
   background-color: #dcdcdc;
 }
 
-.heading-filtr .container-sort {
+.catalog-header-center .container-sort {
   background-color: #ebebeb;
 }
 
@@ -1243,9 +1298,7 @@ a.htmlacademy-ico {
 }
 
 .filtr {
-  float: right;
   width: 270px;
-  padding-left: 60px;
   padding-top: 27px;
   padding-bottom: 27px;
   font-family: "Gilroy", "Arial", sans-serif;
@@ -1261,7 +1314,6 @@ a.htmlacademy-ico {
 .sort {
   float: left;
   width: 759px;
-  padding-left: 73px;
   background-color: #ebebeb;
 }
 
@@ -1352,18 +1404,16 @@ a.htmlacademy-ico {
 }
 
 .main-block .container-filtr {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
+
+
   background-color: #efefef;
 }
 
 .main-filter {
-  float: right;
+
   width: 270px;
   padding-top: 69px;
-  padding-left: 60px;
+
   background-color: #efefef;
 }
 
@@ -1576,10 +1626,10 @@ input[type="checkbox"] + label:active:before {
 }
 
 .catalog-items {
-  float: left;
+
   width: 762px;
   padding-top: 69px;
-  padding-left: 70px;
+
 }
 
 .catalog-item {

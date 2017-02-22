@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -76,133 +76,141 @@
       <div class="content-wrapper clearfix">
 
         <!-- TOP LINE WITH SORTING-->
-        <div class="heading-filtr clearfix">
-          <div class="container-filtr clearfix">
-            <div class="filtr">
-              Фильтр:
-            </div>
-          </div>
-          <div class="container-sort clearfix">
-            <div class="sort">
-              <p>Сортировка:</p>
-              <div class="sort-type">
-                <a href="#" class="active">По цене</a>
-                <a href="#">По типу</a>
-                <a href="#">По популярности</a>
+        <div class="catalog-header">
+          <div class="catalog-header-left"></div>
+          <div class="catalog-header-right"></div>
+          <div class="catalog-header-center clearfix">
+            <div class="container-filtr clearfix">
+              <div class="filtr">
+                Фильтр:
               </div>
-              <ul class="sort-direction">
-                <li class="sort-direction-up"><a href="#">Asc</a></li>
-                <li class="sort-direction-down active"><a href="#">Desc</a></li>
-              </ul>
             </div>
+            <div class="container-sort clearfix">
+              <div class="sort">
+                <p>Сортировка:</p>
+                <div class="sort-type">
+                  <a href="#" class="active">По цене</a>
+                  <a href="#">По типу</a>
+                  <a href="#">По популярности</a>
+                </div>
+                <ul class="sort-direction">
+                  <li class="sort-direction-up"><a href="#">Asc</a></li>
+                  <li class="sort-direction-down active"><a href="#">Desc</a></li>
+                </ul>
+              </div>
+          </div>
           </div>
         </div>
 
         <div class="main-block clearfix">
-          <!-- LEFT MENU WITH FILTERS-->
-          <div class="container-filtr clearfix">
-            <form class="main-filter" method="get" action="form.php">
-              <div class="price-range-filter">
-                <h2>Стоимость</h2>
-                <div class="price-range-controls">
-                  <div class="scale">
-                    <div class="bar">
+          <div class="catalog-body-left"></div>
+          <div class="catalog-body-right"></div>
+          <div class="catalog-body-center">
+            <!-- LEFT MENU WITH FILTERS-->
+            <div class="container-filtr clearfix">
+              <form class="main-filter" method="get" action="form.php">
+                <div class="price-range-filter">
+                  <h2>Стоимость</h2>
+                  <div class="price-range-controls">
+                    <div class="scale">
+                      <div class="bar">
+                      </div>
+                    </div>
+                    <div class="toggle min-toggle"></div>
+                    <div class="toggle max-toggle"></div>
+                    <div class="price-controls">
+                      <label class="min-price">от <input class="min-price" type="text" value="0"></label>
+                      <label class="max-price">до <input class="max-price" type="text" value="5 000"></label>
                     </div>
                   </div>
-                  <div class="toggle min-toggle"></div>
-                  <div class="toggle max-toggle"></div>
-                  <div class="price-controls">
-                    <label class="min-price">от <input class="min-price" type="text" value="0"></label>
-                    <label class="max-price">до <input class="max-price" type="text" value="5 000"></label>
-                  </div>
                 </div>
-              </div>
 
-              <div class="color">
-                <h2>Цвет</h2>
-                <input type="checkbox" id="color-black" checked>
-                <label for="color-black">Чёрный</label>
-                <input type="checkbox" id="color-white">
-                <label for="color-white">Белый</label>
-                <input type="checkbox" id="color-blue" checked>
-                <label for="color-blue">Синий</label>
-                <input type="checkbox" id="color-red" checked>
-                <label for="color-red">Красный</label>
-                <input type="checkbox" id="color-pink">
-                <label for="color-pink">Розовый</label>
-              </div>
+                <div class="color">
+                  <h2>Цвет</h2>
+                  <input type="checkbox" id="color-black" checked>
+                  <label for="color-black">Чёрный</label>
+                  <input type="checkbox" id="color-white">
+                  <label for="color-white">Белый</label>
+                  <input type="checkbox" id="color-blue" checked>
+                  <label for="color-blue">Синий</label>
+                  <input type="checkbox" id="color-red" checked>
+                  <label for="color-red">Красный</label>
+                  <input type="checkbox" id="color-pink">
+                  <label for="color-pink">Розовый</label>
+                </div>
 
-              <div class="bluetooth">
-                <h2>Bluetooth</h2>
-                <input type="radio" name="bluetooth" id="bt-1" value="bt-no" checked>
-                <label for="bt-1">Есть</label>
-                <input type="radio" name="bluetooth" id="bt-2" value="bt-yes">
-                <label for="bt-2">Нет</label>
-              </div>
+                <div class="bluetooth">
+                  <h2>Bluetooth</h2>
+                  <input type="radio" name="bluetooth" id="bt-1" value="bt-no" checked>
+                  <label for="bt-1">Есть</label>
+                  <input type="radio" name="bluetooth" id="bt-2" value="bt-yes">
+                  <label for="bt-2">Нет</label>
+                </div>
 
-              <input type="submit" value="Показать" class="btn">
-            </form>
-          </div>
+                <input type="submit" value="Показать" class="btn">
+              </form>
+            </div>
 
           <!-- MAIN CATALOG -->
-          <div class="container-sort clearfix">
-            <section class="catalog-items">
-              <div class="catalog-item">
-                <div class="catalog-item-image">
-                  <img src="img/catalog/item-1.png" width="360" height="380" alt="">
-                  <div class="hover-btn">
-                    <a href="#" class="btn">В корзину</a>
-                    <a href="#" class="compare-add">Добавить к сравнению</a>
+            <div class="container-sort clearfix">
+              <section class="catalog-items">
+                <div class="catalog-item">
+                  <div class="catalog-item-image">
+                    <img src="img/catalog/item-1.png" width="360" height="380" alt="">
+                    <div class="hover-btn">
+                      <a href="#" class="btn">В корзину</a>
+                      <a href="#" class="compare-add">Добавить к сравнению</a>
+                    </div>
                   </div>
+                  <a href="#">Любительская селфи-палка</a>
+                  <span>500 руб.</span>
                 </div>
-                <a href="#">Любительская селфи-палка</a>
-                <span>500 руб.</span>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-item-image">
-                  <img src="img/catalog/item-2.png" width="360" height="380" alt="">
-                  <div class="hover-btn">
-                    <a href="#" class="btn">В корзину</a>
-                    <a href="#" class="compare-add">Добавить к сравнению</a>
+                <div class="catalog-item">
+                  <div class="catalog-item-image">
+                    <img src="img/catalog/item-2.png" width="360" height="380" alt="">
+                    <div class="hover-btn">
+                      <a href="#" class="btn">В корзину</a>
+                      <a href="#" class="compare-add">Добавить к сравнению</a>
+                    </div>
                   </div>
+                  <a href="#">Профессиональная селфи&#8209;палка </a>
+                  <span>1 500 руб.</span>
                 </div>
-                <a href="#">Профессиональная селфи&#8209;палка </a>
-                <span>1 500 руб.</span>
-              </div>
-              <div class="catalog-item">
-                <div class="catalog-item-image">
-                  <img src="img/catalog/item-3.png" width="360" height="380" alt="">
-                  <div class="hover-btn">
-                    <a href="#" class="btn">В корзину</a>
-                    <a href="#" class="compare-add">Добавить к сравнению</a>
+                <div class="catalog-item">
+                  <div class="catalog-item-image">
+                    <img src="img/catalog/item-3.png" width="360" height="380" alt="">
+                    <div class="hover-btn">
+                      <a href="#" class="btn">В корзину</a>
+                      <a href="#" class="compare-add">Добавить к сравнению</a>
+                    </div>
                   </div>
+                  <a href="#">Непотопляемая селфи-палка</a>
+                  <span>2 500 руб.</span>
                 </div>
-                <a href="#">Непотопляемая селфи-палка</a>
-                <span>2 500 руб.</span>
-              </div>
-              <div class="catalog-item new-item">
-                <div class="catalog-item-image">
-                  <img src="img/catalog/item-4.png" width="360" height="380" alt="">
-                  <div class="hover-btn">
-                    <a href="#" class="btn">В корзину</a>
-                    <a href="#" class="compare-add">Добавить к сравнению</a>
+                <div class="catalog-item new-item">
+                  <div class="catalog-item-image">
+                    <img src="img/catalog/item-4.png" width="360" height="380" alt="">
+                    <div class="hover-btn">
+                      <a href="#" class="btn">В корзину</a>
+                      <a href="#" class="compare-add">Добавить к сравнению</a>
+                    </div>
                   </div>
+                  <a href="#">Селфи-палка «Следуй за мной»</a>
+                  <span>4 900 руб.</span>
                 </div>
-                <a href="#">Селфи-палка «Следуй за мной»</a>
-                <span>4 900 руб.</span>
-              </div>
 
-              <!-- NUMBERS OF PAGES -->
-              <div class="pages-number">
-                <ul>
-                  <li><a href="#" class="page-prev-btn">Назад</a></li>
-                  <li><a href="#" class="currentpage-btn">1</a></li>
-                  <li><a href="#" class="page-btn">2</a></li>
-                  <li><a href="#" class="page-btn">3</a></li>
-                  <li><a href="#" class="page-next-btn">Вперёд</a></li>
-                </ul>
-              </div>
-            </section>
+                <!-- NUMBERS OF PAGES -->
+                <div class="pages-number">
+                  <ul>
+                    <li><a href="#" class="page-prev-btn">Назад</a></li>
+                    <li><a href="#" class="currentpage-btn">1</a></li>
+                    <li><a href="#" class="page-btn">2</a></li>
+                    <li><a href="#" class="page-btn">3</a></li>
+                    <li><a href="#" class="page-next-btn">Вперёд</a></li>
+                  </ul>
+                </div>
+              </section>
+            </div>
           </div>
         </div>
       </div>
